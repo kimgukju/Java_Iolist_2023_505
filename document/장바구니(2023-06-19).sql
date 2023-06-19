@@ -90,4 +90,16 @@ SELECT 30 / 40 FROM dual;
 SELECT 30 + 40 + 50 + 60 FROM dual;
 
 -- 함수를 사용한 연산
-SELECT SUM(30, 40, 50, 60) FROM dual;
+-- 테이블에 데이터가 몇개 있느냐?
+SELECT COUNT(*) FROM tbl_buyer;
+
+-- 이름에 길 문자열이 포함된 고객이 몇명이냐
+SELECT COUNT(*) FROM tbl_buyer WHERE buName LIKE '%길%';
+
+-- 현재 저장된 데이터 중에서 가장 큰 buid 값은 얼마냐
+SELECT MAX(buid) FROM tbl_buyer;
+
+-- 현재 저장된 데이터 중에서 가장 작은 buid 값은 얼마냐
+SELECT MIN(buid) FROM tbl_buyer;
+
+
