@@ -26,6 +26,8 @@ public class IolistDto {
 		this.ioPrice = ioPrice;
 		this.ioTotal = ioTotal;
 	}
+	
+	
 	@Override
 	public String toString() {
 		return "IolistDto [ioSEQ=" + ioSEQ + ", ioDate=" + ioDate + ", ioTime=" + ioTime + ", ioBuId=" + ioBuId
