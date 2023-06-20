@@ -12,7 +12,7 @@ public class BuyerSQL {
 		= " UPDATE " + DBContract.TABLE.BUYER + " SET "
 		+ " buName	= #{buName}, "
 		+ " buTel	= #{buTel}, "
-		+ " buAddr	= #{buAddr}, "
+		+ " buAddr	= #{buAddr} "
 		+ " WHERE buId	= #{buId} "
 		+ "";
 	

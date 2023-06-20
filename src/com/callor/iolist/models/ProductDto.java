@@ -4,7 +4,7 @@ public class ProductDto {
 	public String pCode;	//VARCHAR2(13)
 	public String pName;	//nVARCHAR2(50)
 	public String pItem;	//nVARCHAR2(10)
-	public int pIPrice;		//NUMBER
+	private int pIPrice;		//NUMBER
 	public int pOPrice;		//NUMBER
 
 	public ProductDto() {
@@ -36,6 +36,7 @@ public class ProductDto {
 		oprice = Math.round(oprice/10) * 10;// 소수점 첫자리 반올림
 		
 		this.pOPrice = (int)oprice;
+		this.pIPrice = iprice;
 	}
 	/*
 	 * pIPrice 는 변수에 직접 접근할 수 없도록 private 으로 선언했다

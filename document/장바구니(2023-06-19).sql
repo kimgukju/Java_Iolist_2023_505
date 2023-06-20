@@ -102,4 +102,5 @@ SELECT MAX(buid) FROM tbl_buyer;
 -- 현재 저장된 데이터 중에서 가장 작은 buid 값은 얼마냐
 SELECT MIN(buid) FROM tbl_buyer;
 
+SELECT * FROM tbl_iolist;
 
