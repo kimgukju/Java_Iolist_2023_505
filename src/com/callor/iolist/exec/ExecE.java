@@ -9,6 +9,7 @@ public class ExecE {
 		
 		IolistService iolistService = new IolistServiceImplV1();
 		iolistService.input();
+		iolistService.printList();
 	}
 
 }
